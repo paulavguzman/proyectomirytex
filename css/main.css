@@ -1,0 +1,209 @@
+body {
+  background-color: #ffffff; 
+}
+
+header {
+  background-color: #ff4500; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+header {
+  margin: 0 auto;
+  padding: 0 auto; 
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 150px; 
+}
+
+.logo {
+  display: flex; 
+}
+
+.navegacion {
+  display: flex;
+  align-items: center; 
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 10px; 
+}
+
+nav ul li {
+  background-color: darkgrey;
+  float: right;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-right: 25px;
+  padding: 25px;
+  float: left;
+  align-items: center;
+  padding: 5px;
+  background-color: grey;
+  border-radius: 30px; 
+}
+
+/*ANIMACION HOVER A MENU NAVEGACION*/
+.navegacion nav ul li a:hover {
+  color: #ff4500;
+  transform: scale(1.1);
+  background: grey;
+  border: 2px solid grey; 
+}
+
+main {
+  padding: 200px 0 80px 0; 
+}
+
+main h1 {
+  color: grey;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-family: 'Source Code Pro', monoespaciado;
+  font-weight: 100px;
+  padding-bottom: 30px;
+ }
+
+main h2 {
+  color: gray;
+  text-align: center;
+  text-transform: none;
+  font-size: 2.5rem;
+  font-family: 'Source Code Pro', monoespaciado;
+  font-weight: 50px; 
+}
+
+.parrafo {
+  width: 60%;
+  color: gray;
+  text-align: center;
+  text-transform: none;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-family: 'Source Code Pro', monoespaciado;
+  font-weight: 50px;
+  padding: 10px 20px; 
+}
+
+.parrafo span {
+  font-weight: 700;
+ }
+
+.info {
+  width: 60%;
+  color: grey;
+  text-align: center;
+  text-transform: none;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-family: 'Source Code Pro',monoespaciado;
+  font-weight: 100px;
+  padding-bottom: 50px;
+  padding: 10px 20px; }
+
+.h1 {
+  color: grey;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Source Code Pro', monoespaciado;
+  font-weight: 100px;
+  padding-bottom: 30px; }
+
+h1:hover {
+  transform: scale(1.1); 
+}
+
+.footer {
+  text-decoration: none;
+  text-align: end;
+  padding-bottom: 50px; 
+}
+
+a {
+  text-decoration: none; 
+}
+
+.contenedor .datos {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0; 
+}
+
+.contenedor .datos a {
+    text-decoration: none;
+    color: #ff4500; 
+}
+    .contenedor .datos a:hover {
+      color: #00ffd5; 
+    }
+
+.contenedor h4 {
+  color: #ff4500;
+  text-align: center; }
+
+.contenedor h3 {
+  color: #ff4500;
+  text-align: center; 
+}
+
+.mapa {
+  width: 100%; 
+}
+
+footer .derechos {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px; 
+}
+
+/*boton whatsapp*/
+.container-b {
+  background-color: #2e6329;
+  border: 1px solid #ffff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+ }
+
+.container-b:hover {
+  transform: scale(1.1);
+  transition: 0.3s; 
+}
+
+.btn-whatsapp {
+  width: 80px;
+  transition: ease 1s; 
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85); }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0); } 
+}
